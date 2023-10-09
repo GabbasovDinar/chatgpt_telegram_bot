@@ -6,4 +6,7 @@ ChatGPT Telegram Bot
 
 # TODO:
 - Add yml config for GPT Model
-- Refactoring
+- Add features to send messages to groups
+- Change lang
+- refactoring crud methods
+- set commands to admin bot
