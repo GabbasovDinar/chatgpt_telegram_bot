@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  bot:
+    build: .
+    restart: always
+    depends_on:
+      - db
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=postgresql://bot:bot@db/bot_db
+    volumes:
+      - .:/bot
+    command: python bot/main.py
+
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      - POSTGRES_USER=bot
+      - POSTGRES_PASSWORD=bot
+      - POSTGRES_DB=bot_db
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
