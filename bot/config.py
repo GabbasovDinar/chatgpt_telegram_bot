@@ -1,0 +1,13 @@
+import ast
+import os
+
+TELEGRAM_MAIN_BOT_TOKEN = os.getenv("TELEGRAM_MAIN_BOT_TOKEN")
+TELEGRAM_ADMIN_BOT_TOKEN = os.getenv("TELEGRAM_ADMIN_BOT_TOKEN")
+TELEGRAM_ADMIN_USER_ID = os.getenv("TELEGRAM_ADMIN_USER_ID")
+
+SUPERUSER_ID = int(os.getenv("SUPERUSER_ID"))
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+GPT_MODEL = ast.literal_eval(os.getenv("GPT_MODEL"))
