@@ -3,3 +3,4 @@ fastapi==0.74.1
 openai==0.27.0
 psycopg2-binary==2.9.3
 SQLAlchemy==1.4.31
+wdb
