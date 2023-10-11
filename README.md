@@ -10,3 +10,9 @@ ChatGPT Telegram Bot
 - Change lang
 - refactoring crud methods
 - set commands to admin bot
+- Refactoring
+- Tests
+- add more commands
+
+# SUPPORT ME:
+- TODO
